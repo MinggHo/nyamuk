@@ -1,0 +1,17 @@
+{
+  "name": "IA-Mosquito",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "style": "npx sass ./assets/style.scss ./index.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "vite": "^2.2.4"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^0.1.3"
+  }
+}
