@@ -90,11 +90,7 @@ const runningAnimation = new IntersectionObserver((entries) => {
         .to("#mosquito-behind-dude", { x: '-30vw', duration: 5 })
 
       fireAnimation = false;
-
-
     }
-
-    // GSDevTools.create();
   })
 }, { threshold: 0.25 });
 
