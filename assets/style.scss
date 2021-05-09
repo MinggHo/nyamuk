@@ -10,6 +10,15 @@
   --calypso: #33778A;
 }
 
+
+body {
+  overflow: hidden; 
+}
+
+.loaded {
+  overflow: auto;
+}
+
 @mixin font-size($size: 16) {
   @if $size == 16 {
     font-size: 1rem;
@@ -22,7 +31,7 @@
   }
   @else if $size == 54 {
     // font-size: 3.375rem;
-    font-size: clamp(36px, 8vw, 54px);
+    font-size: clamp(34px, 8vw, 54px);
   }
   @else if $size == 81 {
     font-size: 5rem;
@@ -120,7 +129,12 @@
     transform: translateX(-50%);
     z-index: 2;
     font-weight: 500;
-    @include font-size(24)
+    @include font-size(24);
+    .arrow-deco {
+      display: flex;
+      margin-top: 8px;
+      justify-content: center;
+    }
   }
   .mosquito-img {
     width: 23rem;
@@ -280,6 +294,7 @@
     top: -10rem;
     z-index: 8;
     #the-dude {
+      transform: translateX(-40vw);
       position: relative;
       z-index: 5;
     }
@@ -288,6 +303,7 @@
       position: absolute;
       left: -5rem;
       top: -2rem;
+      transform: translateX(-30vw);
     }
   }
 }
@@ -346,8 +362,9 @@
   }
 
   .card-block {
-    display: flex;
     gap: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     .card-item {
       padding: 16px 24px;
       background-color: var(--mustard);
@@ -831,6 +848,9 @@ a {
     @include font-size(24);
     font-weight: 600;
     cursor: pointer;
+    @media screen and (min-width: 64rem) {
+      width: calc(clamp(30rem, 20vw, 31rem) / 4);
+    }
   }
   
   .active {
@@ -863,29 +883,75 @@ a {
 
 
 /* Animation */
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  background: linear-gradient(180deg, #3d93f7, #54a0f8);
+  .loader__content {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader__image {
+    animation: blink-1 3s ease-in-out infinite alternate-reverse both;
+  }
+}
 
-#animate-elem {
-  transform-origin: 50% center; 
-  animation: rotate 4s linear reverse infinite; 
+/* Used on loader */
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes circle-out-center {
+  from {
+    clip-path: circle(125%);
+  }
+  to {
+    clip-path: circle(0%);
+  }
+}
+
+.exit {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both;
 }
 
 @keyframes rotate {
   0% {
-    transform: translate(-50px, -30px)
+      transform: translateY(-50px) rotate(0deg)
   }
+
   50% {
-    transform: rotate(-30deg) translate(20px, 80px); 
+      transform: translateY(122px) rotate(35deg)
   }
-  100% { 
-    transform: rotate(0deg) translate(-50px, -30px);
+
+  100% {
+      transform: translateY(-50px) rotate(0deg)
   }
 }
 
-@keyframes run-forest-run {
-  50% {
-    transform: translateX(90vw) scaleX(1);
+@keyframes rotate2 {
+  0% {
+      transform: translateY(-20px) rotate(0deg)
   }
+
+  50% {
+      transform: translateY(30px) rotate(5deg)
+  }
+
   100% {
-    transform: translateX(0) scaleX(-1);
+      transform: translateY(-20px) rotate(0deg)
   }
 }

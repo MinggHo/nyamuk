@@ -5,10 +5,15 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO OG Meta l8er -->
   <title>SAYS Exclusive - Mosquito</title>
+  <meta property="og:title" content="SAYS Exclusive - Mosquito">
+  <meta property="og:description" content="Why do some people always get bitten by mosquitoes while others don’t?">
+  <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+  <meta property="og:url" content="https://exclusive.says.com/my/exclusive/mosquito">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@500&display=swap"
     rel="stylesheet">
 </head>
 
@@ -16,7 +21,7 @@
   <nav class="navbar__block">
     <div class="wrapper">
       <a href="#">
-        <img class="navbar__logo" src="./assets/images/says-logo-white.svg" height="24" alt="" />
+        <img class="navbar__logo" src="./assets/images/says-logo-white.svg" height="24" width="92" alt="" />
       </a>
       <span class="navbar__exclusive">EXCLUSIVE</span>
     </div>
@@ -28,8 +33,15 @@
           PM</span></p>
       <div class="cta__floating">
         Let’s find out
+        <div class="arrow-deco">
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" height="10">
+            <path
+              d="M7.703 9.547a1.104 1.104 0 001.547 0l6.375-6.375c.469-.469.469-1.172 0-1.594L14.594.5C14.125.078 13.422.078 13 .5L8.453 5.047 3.953.5C3.531.078 2.828.078 2.36.5L1.33 1.578c-.47.422-.47 1.125 0 1.594l6.374 6.375z"
+              fill="#000" />
+          </svg>
+        </div>
       </div>
-      <img class="mosquito-img" src="./assets/images/mosquito.svg" alt="">
+      <img class="mosquito-img" src="./assets/images/mosquito.svg" alt="" width="240" height="200" loading="eager">
     </div>
   </div>
   <div id="second">
@@ -37,7 +49,11 @@
       <h5 class="title">Do you ever feel like you're the only one being targeted by mosquitoes?</h5>
       <p class="text">Somehow, you always seem to end up with itchy welts all over your body, while your friends aren’t
         even aware of the existence of these pesky biters.</p>
-      <img class="image" src="./assets/images/mosquito-buzz.png" alt="">
+      <picture>
+        <source srcset="./assets/images/mosquito-buzz.webp" type="image/webp">
+        <source srcset="./assets/images/mosquito-buzz.png" type="image/png">
+        <img class="image" src="./assets/images/mosquito-buzz.png" alt="" width="250" height="250" loading="lazy">
+      </picture>
     </div>
   </div>
   <div id="third">
@@ -359,7 +375,7 @@
       <div class="flex flex-col">
         <h5 class="title">But, here’s the thing – <br> <span class="bg-yellow text-black">they don’t suck blood for
             food.</span></h5>
-        <p class="text hidden-mobile">In fact, only female mosquitoes bite people. That’s because they need proteins
+        <p class="text">In fact, only female mosquitoes bite people. That’s because they need proteins
           from human blood to develop fertile eggs and create more mosquito babies.</p>
       </div>
     </div>
@@ -368,7 +384,7 @@
     <div class="wrapper">
       <h4 class="title">So why do some people get bitten by mosquitoes all the time?</h4>
       <div class="three-stog">
-        <img src="./assets/images/3-stooges.svg" alt="">
+        <img src="./assets/images/3-stooges.svg" alt="" width="320" height="160" loading="lazy">
       </div>
       <div class="running-guy--block">
         <div class="extra-wrapper">
@@ -422,123 +438,87 @@
                 d="M220.792 213.74c0 2.298-2.139 4.104-4.936 4.104s-4.936-1.806-4.936-4.104 2.139-4.104 4.936-4.104 4.936 1.806 4.936 4.104z"
                 fill="#191717" />
               <path d="M214.211 216.366l1.645 6.895-.823-6.895" fill="#191717" />
-              <path opacity=".3"
-                d="M50.344 238.2s-17.768-47.935-32.904-41.205c-15.137 6.731 27.804 42.683 27.804 42.683s6.581 5.417 5.1-1.478z"
-                fill="#F2EBEB" />
-              <path opacity=".3"
-                d="M47.712 239.349s-33.234-28.564-41.954-17.237c-8.555 11.327 38.664 20.521 38.664 20.521s7.239 1.149 3.29-3.284z"
-                fill="#F2EBEB" />
-              <path d="M43.928 244.11S18.427 275.301 38.992 295c20.566 19.7 5.759-38.085 16.453-41.205l-11.517-9.685z"
-                fill="#191717" />
-              <path
-                d="M51.99 233.439s-8.72 2.955-8.885 8.044c-.164 5.089 8.062 13.462 12.175 13.462 4.113 0 7.24-3.612 7.568-6.239.33-2.626-4.442-15.431-10.858-15.267z"
-                fill="#191717" />
-              <path
-                d="M60.71 247.721s.164 0 .329.165c1.974.985 12.503 5.745 16.617-.821 4.606-7.223-5.759-27.415-17.77-20.356-12.01 7.059-4.441 9.521-4.441 9.521"
-                fill="#191717" />
-              <path d="M77.326 239.677s6.088 7.388 20.895 8.537c0 0-6.91 1.313-20.895-6.402v-2.135z" fill="#191717" />
-              <path
-                d="M76.833 233.439c0 3.94-3.29 7.223-7.24 7.223-3.948 0-7.238-3.283-7.238-7.223s3.29-7.223 7.239-7.223c3.948 0 7.239 3.119 7.239 7.223z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M48.206 235.081S12.668 198.309 1.48 210.457c-11.188 12.148 42.611 28.072 42.611 28.072s8.227 2.134 4.114-3.448z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M46.396 237.051s-41.954-12.805-45.244.985c-3.29 13.79 43.599 3.447 43.599 3.447s7.074-1.806 1.645-4.432z"
-                fill="#F2EBEB" />
-              <path
-                d="M76.34 234.26c0 .821-.494 1.642-1.152 1.642-.658 0-1.152-.657-1.152-1.642 0-.821.494-1.641 1.152-1.641.658 0 1.151.656 1.151 1.641z"
-                fill="#191717" />
-              <path
-                d="M74.859 233.768c0 .164-.33.492-.658.492-.33 0-.659-.164-.659-.492 0-.329.33-.493.659-.493.329.164.658.328.658.493z"
-                fill="#F2EBEB" />
-              <path d="M66.303 222.933s3.784-5.253 6.746-1.477c0 0-1.81-4.761-6.746 1.477z" fill="#191717" />
-              <path
-                d="M61.039 248.707c.329.656 1.151 1.313 1.48 1.969.494.821.823 1.642 1.152 2.299.987 2.298 1.81 4.596 2.303 7.059.823 3.775.987 7.387.987 11.163M58.242 250.677c.822 3.611 1.81 7.551 1.974 11.327a21.45 21.45 0 010 4.596c-.165.985-.494 2.463-.33 3.284M54.951 253.96c0 1.641.494 3.283.494 4.76.164 2.627.164 5.254-.33 7.88-.493 2.955-.822 5.91-.822 8.865"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".4"
-                d="M65.316 248.378c.494 2.298 2.797 4.597 3.784 6.895.823 1.642.987 3.612 1.81 5.089M59.887 250.841c.658 1.97 1.645 3.939 2.139 6.074.658 2.626.822 5.253 1.316 7.879M56.925 252.318c1.152 3.94.494 8.537.659 12.641"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".3"
-                d="M105.131 412.541s6.252-35.295-5.43-36.608c-11.516-1.314 1.646 35.623 1.646 35.623s2.303 5.581 3.784.985z"
-                fill="#F2EBEB" />
-              <path opacity=".3"
-                d="M103.321 412.212s-10.036-29.056-19.249-25.116c-9.213 3.775 16.123 26.101 16.123 26.101s3.949 3.119 3.126-.985z"
-                fill="#F2EBEB" />
-              <path d="M99.208 413.69s-26.488 9.85-21.059 29.057c5.43 19.207 16.946-21.013 24.514-19.043l-3.455-10.014z"
-                fill="#191717" />
-              <path
-                d="M107.928 410.078s-6.252-1.313-8.226 1.806c-1.81 2.955.164 10.999 2.632 12.477 2.468 1.477 5.759.328 6.746-.985.987-1.478 2.797-10.999-1.152-13.298z"
-                fill="#191717" />
-              <path
-                d="M108.093 421.898l.164.164c.823 1.314 5.594 7.88 10.365 5.418 5.429-2.791 6.252-18.551-3.619-18.551-9.872 0-6.088 4.104-6.088 4.104"
-                fill="#191717" />
-              <path d="M120.925 422.883s.988 6.567 9.543 12.641c0 0-4.607-1.642-10.365-11.163l.822-1.478z"
-                fill="#191717" />
-              <path
-                d="M122.9 418.943c-1.481 2.463-4.442 3.119-6.91 1.806-2.468-1.478-3.126-4.432-1.81-6.895 1.481-2.462 4.442-3.119 6.91-1.806 2.468 1.314 3.29 4.433 1.81 6.895z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M104.967 409.914s-8.391-34.802-19.579-31.355c-11.188 3.447 15.795 32.012 15.795 32.012s4.277 4.104 3.784-.657z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M103.157 410.407s-20.73-22.655-27.64-15.432c-6.91 7.224 25.172 17.402 25.172 17.402s4.936 1.477 2.468-1.97z"
-                fill="#F2EBEB" />
-              <path
-                d="M122.406 419.272c-.329.492-.822.82-1.316.492-.329-.164-.494-.821-.165-1.313.329-.493.823-.821 1.317-.493.329.165.493.657.164 1.314z"
-                fill="#191717" />
-              <path
-                d="M121.584 418.451c-.165.164-.329.164-.494 0-.165-.164-.329-.328-.329-.493.164-.164.329-.164.494 0 .329.165.493.329.329.493z"
-                fill="#F2EBEB" />
-              <path d="M120.267 408.929s4.113-1.805 4.607 1.478c0 0 .494-3.612-4.607-1.478z" fill="#191717" />
-              <path
-                d="M107.928 422.555c0 .492.165 1.149.165 1.805 0 .657 0 1.314-.165 1.806-.165 1.642-.658 3.448-1.152 5.089-.822 2.463-2.138 4.761-3.455 7.059M105.625 422.883c-.823 2.463-1.646 5.089-2.797 7.552-.494.985-.987 1.97-1.645 2.791-.33.492-1.152 1.313-1.317 1.805M102.499 423.54c-.658.985-.823 2.134-1.316 3.119-.823 1.641-1.81 3.283-2.962 4.596-1.316 1.642-2.632 3.284-3.62 5.089"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".4"
-                d="M110.725 423.868c-.494 1.642 0 3.776-.165 5.418-.164 1.313-.658 2.462-.658 3.775M106.447 423.54c-.329 1.477-.493 2.955-.822 4.432-.494 1.806-1.317 3.448-1.975 5.253M104.144 423.375c-.658 2.791-2.797 5.254-4.113 7.88"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".3"
-                d="M208.123 39.235s21.389-28.729 11.682-35.131c-9.707-6.402-14.643 32.668-14.643 32.668s-.494 5.91 2.961 2.463z"
-                fill="#F2EBEB" />
-              <path opacity=".3"
-                d="M206.478 38.25s4.113-30.37-5.758-31.19c-9.872-.822 2.632 30.533 2.632 30.533s1.974 4.597 3.126.657z"
-                fill="#F2EBEB" />
-              <path
-                d="M202.201 37.757s-28.134-3.119-31.918 16.58c-3.784 19.536 24.678-11.162 30.601-6.073l1.317-10.507z"
-                fill="#191717" />
-              <path
-                d="M211.578 38.414s-5.1-3.94-8.061-2.134c-2.962 1.806-4.936 9.85-3.291 12.312 1.645 2.462 4.936 2.79 6.581 2.134 1.481-.82 7.404-8.536 4.771-12.312z"
-                fill="#191717" />
-              <path
-                d="M206.478 49.084v.329c.165 1.477 1.316 9.521 6.91 9.521 6.088 0 13.985-13.79 5.265-18.222-8.72-4.432-7.239.985-7.239.985"
-                fill="#191717" />
-              <path d="M217.501 55.65s-1.974 6.403 2.797 15.596c0 0-3.455-3.611-4.277-14.61l1.48-.985z"
-                fill="#191717" />
-              <path
-                d="M221.121 52.86c-2.304 1.478-5.429.821-6.91-1.477-1.481-2.298-.823-5.417 1.481-6.895 2.303-1.477 5.429-.82 6.91 1.478 1.48 2.298.822 5.417-1.481 6.894z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M209.111 36.937S217.337 2.134 205.82.163c-11.517-1.97-.329 35.788-.329 35.788s1.974 5.417 3.62.985z"
-                fill="#F2EBEB" />
-              <path opacity=".7"
-                d="M207.301 36.608s-8.391-29.55-17.769-26.266c-9.378 3.283 14.643 26.923 14.643 26.923s3.784 3.447 3.126-.657z"
-                fill="#F2EBEB" />
-              <path
-                d="M220.463 53.024c-.494.329-1.152.329-1.316 0-.165-.328 0-.985.493-1.313.494-.328 1.152-.328 1.316 0 .165.328 0 .985-.493 1.313z"
-                fill="#191717" />
-              <path
-                d="M220.134 52.04c-.165.164-.329 0-.494-.165-.164-.164-.164-.492 0-.492.165-.164.329 0 .494.164.164.164.164.328 0 .493z"
-                fill="#F2EBEB" />
-              <path d="M223.26 42.846s4.606.329 3.455 3.284c0 0 1.974-2.791-3.455-3.284z" fill="#191717" />
-              <path
-                d="M205.985 49.577c-.329.493-.329 1.15-.659 1.642-.329.492-.658 1.149-.987 1.641-.987 1.478-2.139 2.791-3.29 3.94-1.974 1.806-4.113 3.448-6.252 4.761M203.846 48.756c-1.81 1.97-3.784 3.94-5.923 5.418a16.324 16.324 0 01-2.797 1.806c-.658.328-1.645.656-1.974.985M200.72 47.935c-.987.657-1.81 1.478-2.633 2.135-1.48 1.149-3.126 2.134-4.771 2.79-1.974.821-3.784 1.806-5.594 2.955"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".4"
-                d="M207.959 51.875c-1.152 1.15-1.645 3.448-2.633 4.761-.658.985-1.809 1.97-2.303 2.955M204.339 49.741c-.822 1.15-1.809 2.463-2.797 3.612-1.316 1.313-2.796 2.462-4.113 3.776M202.365 48.428c-1.81 2.298-4.936 3.447-7.239 5.253"
-                stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
-              <path opacity=".4"
-                d="M339.743 146.761c-3.291-2.298-4.442-4.76-4.936-5.91.329-.82.658-1.641.658-2.626 0-.164.165-.164.165-.328.822-1.314.329-2.955-.987-3.612h-.165c-.658-.985-1.645-1.642-3.126-1.642-2.303 0-3.29.493-3.455.985l-.329-.328s-.493-.164-1.316-.164c.658-4.433 2.139-17.566-3.126-18.058-1.974-.164-2.632 1.806-2.468 4.596-1.481-2.298-3.29-3.775-5.1-3.119-1.81.493-1.645 2.299-.823 4.597-1.481.657-1.316 2.298-.164 4.104-1.81-.821-3.291-.985-4.278.164-3.126 3.283 8.555 7.716 12.339 9.029.165.164.329.328.494.328 0 .165-.165.493-.165.657-.987.328-13.984 5.582-11.187 15.431 2.797 9.686 8.391-9.029 12.504-10.178l.329.329-4.113 6.566c.493-.985 1.151-1.806 1.974-2.791.658-.656 1.152-1.641 1.645-2.462.165-.493.329-.821.494-1.313l.164.164c.165.164.329.164.494.164l-1.81 3.447c.494-1.149 1.316-2.134 1.81-3.447h.493l-2.468 5.253c.165-.328.494-.656.823-.985.329-.492.658-.985.823-1.477.493-.821.822-1.806 1.151-2.791h.658l-1.316 4.268c.329-.985.823-1.806.987-2.791.165-.492.165-.985.329-1.641.165 0 .494-.164.659-.164l-2.139 7.387c.658-1.149 1.316-2.462 1.81-3.776.329-.821.493-1.806.658-2.626v-1.15l.493-.492c.165.328.494.492.658.821v.821-.657c.987 1.149 2.633 2.134 4.278 1.313.494-.164.823-.656 1.152-1.149 3.126 4.433 5.429 5.253 5.429 5.253zM336.781 133.3s.33-1.806-2.138-.821c.493-.164 1.974-.492 2.138.821z"
-                fill="#191717" />
+              <g>
+                <path opacity=".3"
+                  d="M50.344 238.2s-17.768-47.935-32.904-41.205c-15.137 6.731 27.804 42.683 27.804 42.683s6.581 5.417 5.1-1.478z"
+                  fill="#F2EBEB" />
+                <path opacity=".3"
+                  d="M47.712 239.349s-33.234-28.564-41.954-17.237c-8.555 11.327 38.664 20.521 38.664 20.521s7.239 1.149 3.29-3.284z"
+                  fill="#F2EBEB" />
+                <path d="M43.928 244.11S18.427 275.301 38.992 295c20.566 19.7 5.759-38.085 16.453-41.205l-11.517-9.685z"
+                  fill="#191717" />
+                <path
+                  d="M51.99 233.439s-8.72 2.955-8.885 8.044c-.164 5.089 8.062 13.462 12.175 13.462 4.113 0 7.24-3.612 7.568-6.239.33-2.626-4.442-15.431-10.858-15.267z"
+                  fill="#191717" />
+                <path
+                  d="M60.71 247.721s.164 0 .329.165c1.974.985 12.503 5.745 16.617-.821 4.606-7.223-5.759-27.415-17.77-20.356-12.01 7.059-4.441 9.521-4.441 9.521"
+                  fill="#191717" />
+                <path d="M77.326 239.677s6.088 7.388 20.895 8.537c0 0-6.91 1.313-20.895-6.402v-2.135z" fill="#191717" />
+                <path
+                  d="M76.833 233.439c0 3.94-3.29 7.223-7.24 7.223-3.948 0-7.238-3.283-7.238-7.223s3.29-7.223 7.239-7.223c3.948 0 7.239 3.119 7.239 7.223z"
+                  fill="#F2EBEB" />
+                <path opacity=".7"
+                  d="M48.206 235.081S12.668 198.309 1.48 210.457c-11.188 12.148 42.611 28.072 42.611 28.072s8.227 2.134 4.114-3.448z"
+                  fill="#F2EBEB" />
+                <path opacity=".7"
+                  d="M46.396 237.051s-41.954-12.805-45.244.985c-3.29 13.79 43.599 3.447 43.599 3.447s7.074-1.806 1.645-4.432z"
+                  fill="#F2EBEB" />
+                <path
+                  d="M76.34 234.26c0 .821-.494 1.642-1.152 1.642-.658 0-1.152-.657-1.152-1.642 0-.821.494-1.641 1.152-1.641.658 0 1.151.656 1.151 1.641z"
+                  fill="#191717" />
+                <path
+                  d="M74.859 233.768c0 .164-.33.492-.658.492-.33 0-.659-.164-.659-.492 0-.329.33-.493.659-.493.329.164.658.328.658.493z"
+                  fill="#F2EBEB" />
+                <path d="M66.303 222.933s3.784-5.253 6.746-1.477c0 0-1.81-4.761-6.746 1.477z" fill="#191717" />
+                <path
+                  d="M61.039 248.707c.329.656 1.151 1.313 1.48 1.969.494.821.823 1.642 1.152 2.299.987 2.298 1.81 4.596 2.303 7.059.823 3.775.987 7.387.987 11.163M58.242 250.677c.822 3.611 1.81 7.551 1.974 11.327a21.45 21.45 0 010 4.596c-.165.985-.494 2.463-.33 3.284M54.951 253.96c0 1.641.494 3.283.494 4.76.164 2.627.164 5.254-.33 7.88-.493 2.955-.822 5.91-.822 8.865"
+                  stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
+                <path opacity=".4"
+                  d="M65.316 248.378c.494 2.298 2.797 4.597 3.784 6.895.823 1.642.987 3.612 1.81 5.089M59.887 250.841c.658 1.97 1.645 3.939 2.139 6.074.658 2.626.822 5.253 1.316 7.879M56.925 252.318c1.152 3.94.494 8.537.659 12.641"
+                  stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
+
+              </g>
+              <g>
+                <path opacity=".3"
+                  d="M208.123 39.235s21.389-28.729 11.682-35.131c-9.707-6.402-14.643 32.668-14.643 32.668s-.494 5.91 2.961 2.463z"
+                  fill="#F2EBEB" />
+                <path opacity=".3"
+                  d="M206.478 38.25s4.113-30.37-5.758-31.19c-9.872-.822 2.632 30.533 2.632 30.533s1.974 4.597 3.126.657z"
+                  fill="#F2EBEB" />
+                <path
+                  d="M202.201 37.757s-28.134-3.119-31.918 16.58c-3.784 19.536 24.678-11.162 30.601-6.073l1.317-10.507z"
+                  fill="#191717" />
+                <path
+                  d="M211.578 38.414s-5.1-3.94-8.061-2.134c-2.962 1.806-4.936 9.85-3.291 12.312 1.645 2.462 4.936 2.79 6.581 2.134 1.481-.82 7.404-8.536 4.771-12.312z"
+                  fill="#191717" />
+                <path
+                  d="M206.478 49.084v.329c.165 1.477 1.316 9.521 6.91 9.521 6.088 0 13.985-13.79 5.265-18.222-8.72-4.432-7.239.985-7.239.985"
+                  fill="#191717" />
+                <path d="M217.501 55.65s-1.974 6.403 2.797 15.596c0 0-3.455-3.611-4.277-14.61l1.48-.985z"
+                  fill="#191717" />
+                <path
+                  d="M221.121 52.86c-2.304 1.478-5.429.821-6.91-1.477-1.481-2.298-.823-5.417 1.481-6.895 2.303-1.477 5.429-.82 6.91 1.478 1.48 2.298.822 5.417-1.481 6.894z"
+                  fill="#F2EBEB" />
+                <path opacity=".7"
+                  d="M209.111 36.937S217.337 2.134 205.82.163c-11.517-1.97-.329 35.788-.329 35.788s1.974 5.417 3.62.985z"
+                  fill="#F2EBEB" />
+                <path opacity=".7"
+                  d="M207.301 36.608s-8.391-29.55-17.769-26.266c-9.378 3.283 14.643 26.923 14.643 26.923s3.784 3.447 3.126-.657z"
+                  fill="#F2EBEB" />
+                <path
+                  d="M220.463 53.024c-.494.329-1.152.329-1.316 0-.165-.328 0-.985.493-1.313.494-.328 1.152-.328 1.316 0 .165.328 0 .985-.493 1.313z"
+                  fill="#191717" />
+                <path
+                  d="M220.134 52.04c-.165.164-.329 0-.494-.165-.164-.164-.164-.492 0-.492.165-.164.329 0 .494.164.164.164.164.328 0 .493z"
+                  fill="#F2EBEB" />
+                <path d="M223.26 42.846s4.606.329 3.455 3.284c0 0 1.974-2.791-3.455-3.284z" fill="#191717" />
+                <path
+                  d="M205.985 49.577c-.329.493-.329 1.15-.659 1.642-.329.492-.658 1.149-.987 1.641-.987 1.478-2.139 2.791-3.29 3.94-1.974 1.806-4.113 3.448-6.252 4.761M203.846 48.756c-1.81 1.97-3.784 3.94-5.923 5.418a16.324 16.324 0 01-2.797 1.806c-.658.328-1.645.656-1.974.985M200.72 47.935c-.987.657-1.81 1.478-2.633 2.135-1.48 1.149-3.126 2.134-4.771 2.79-1.974.821-3.784 1.806-5.594 2.955"
+                  stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
+                <path opacity=".4"
+                  d="M207.959 51.875c-1.152 1.15-1.645 3.448-2.633 4.761-.658.985-1.809 1.97-2.303 2.955M204.339 49.741c-.822 1.15-1.809 2.463-2.797 3.612-1.316 1.313-2.796 2.462-4.113 3.776M202.365 48.428c-1.81 2.298-4.936 3.447-7.239 5.253"
+                  stroke="#191717" stroke-width=".5" stroke-miterlimit="10" stroke-linecap="round" />
+              </g>
               <path opacity=".4"
                 d="M334.478 132.479c-.164 0-.164.164-.164.164 0-.164.164-.164.164-.164zM329.049 143.478v-1.642l-.329 3.612c0-.657.329-1.313.329-1.97z"
                 fill="#191717" />
@@ -558,9 +538,6 @@
                   fill="#191717" />
                 <path opacity=".6" d="M377.09 113.272l-.329 1.97.493-1.806" fill="#191717" />
               </g>
-              <path opacity=".4"
-                d="M208.781 341.787l.494-.493c1.481-2.298.987-5.089-.823-6.238-.329-.164-.658-.328-1.151-.328.658-3.119 3.619-17.894-2.633-17.402-6.416.493-1.316 15.432-.329 17.894-.658.493-1.316.985-1.974 1.806-.658.985-.987 2.298-.823 3.283v-.164s-18.426.493-15.629 6.731c2.796 6.238 16.617-4.433 16.617-4.433l-.165-.164c.165.328.494.657.823.821 1.48.985 3.619.492 5.1-.985l5.429 1.806-4.936-2.134z"
-                fill="#191717" />
             </g>
             <defs>
               <clipPath id="clip0">
@@ -591,12 +568,12 @@
               likely</span> to become mosquito prey
           </p>
           <p class="text-blue text-result" data-target="2">
-            Those with Type B blood are kind of <span class="text-red semi-bold font-inherit font-weight-600">in
-              between</span>
-          </p>
-          <p class="text-blue text-result" data-target="3">
             People with Type AB blood are <span class="text-red semi-bold font-inherit font-weight-600">less
               likely</span> to become mosquito prey
+          </p>
+          <p class="text-blue text-result" data-target="3">
+            Those with Type B blood are kind of <span class="text-red semi-bold font-inherit font-weight-600">in
+              between</span>
           </p>
           <p class="text-blue text-result" data-target="4">
             A study found that people with Type O blood are 83% <span
@@ -619,22 +596,37 @@
       </div>
       <div class="card-block">
         <div class="card-item flow">
-          <img class="card-img" src="assets/images/pregnant-women.png" alt="Pregnant women" />
+          <picture>
+            <source srcset="assets/images/pregnant-women.webp" type="image/webp">
+            <source srcset="assets/images/pregnant-women.png" type="image/png">
+            <img class="card-img" src="assets/images/pregnant-women.png" alt="Pregnant women" loading="lazy" width="128"
+              height="128" />
+          </picture>
           <h5 class="card-title">Pregnant women</h5>
           <p class="text-black">According to a study done in Africa, pregnant women are twice as likely to attract
             mosquitoes compared to non-pregnant women because they exhale more CO2.</p>
         </div>
         <div class="card-item flow">
-          <img class="card-img" src="assets/images/cute-person.png" alt="Larger Individuals" />
+          <picture>
+            <source srcset="assets/images/cute-person.webp" type="image/webp">
+            <source srcset="assets/images/cute-person.png" type="image/png">
+            <img class="card-img" src="assets/images/cute-person.png" alt="Larger Individuals" loading="lazy"
+              width="128" height="128" />
+          </picture>
           <h5 class="card-title">Larger individuals</h5>
           <p class="text-black">Overweight people tend to give off more CO2, making them more susceptible to mosquito
             bites because of their larger body size and relative heat.</p>
         </div>
         <div class="card-item flow">
-          <img class="card-img" src="assets/images/mj-probably.png" alt="Driking" />
+          <picture>
+            <source srcset="assets/images/mj-probably.webp" type="image/webp">
+            <source srcset="assets/images/mj-probably.png" type="image/png">
+            <img class="card-img" src="assets/images/mj-probably.png" alt="Driking" loading="lazy" width="128"
+              height="128" />
+          </picture>
           <h5 class="card-title">Drinking</h5>
           <p class="text-black">Drinking alcohol also raises your metabolic rate and your body temperature, making you
-            very appealing to mosquitoes.t</p>
+            very appealing to mosquitoes</p>
         </div>
       </div>
     </div>
@@ -643,7 +635,7 @@
     <div class="wrapper relative">
       <div class="content-block flex">
         <div class="img-block">
-          <img src="./assets/images/lifting-dude-450px.gif" alt="">
+          <img src="./assets/images/lifting-dude-450px.gif" alt="" loading="lazy" width="360" height="360">
         </div>
         <div>
           <h4 class="title">You just worked out</h4>
@@ -659,7 +651,7 @@
         <div>
           <h4 class="title">What you're wearing</h4>
           <p class="text">Apart from smell, mosquitoes also rely on sight to spot their prey. Red makes you a prime
-            target, as well as dark colours such as black and blue.
+            target, as well as dark colours like black and blue.
           </p>
         </div>
         <div class="img-block">
@@ -694,7 +686,7 @@
         According to the London School of Hygiene & Tropical Medicine, these people seemingly produce a natural
         repellent against mosquitoes.
         <br><br>
-        Ugh, lucky.
+        <b>Ugh, lucky.</b>
       </p>
     </div>
   </div>
@@ -705,13 +697,16 @@
     </div>
   </div>
   <div id="content-footer">
-    <img src="./assets/images/says-logo-white.svg" height="24" alt="">
+    <img src="./assets/images/says-logo-white.svg" height="24" alt="" loading="lazy">
+  </div>
+  <div id="loader">
+    <div class="loader__content">
+      <img class="loader__image" src="./assets/images/says-logo-white.svg" height="34" alt="">
+    </div>
   </div>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
-  <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script> -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>

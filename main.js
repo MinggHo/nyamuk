@@ -73,42 +73,25 @@ LottieInteractivity.create({
   ]
 });
 
-/*
-  Motion using scrollMagic & GSAP
-
-  use scrollMagic to detect scroll viewport (maybe use IntersectionObserver?)
-
-  use GSAP to move the nyamuk around, the nyamuk to be move need an ID to be targeted.
-*/
-
+/* Ensure that the running animation will run once */
 var fireAnimation = true;
-
-/* 
-  content-running
-  Run code when arrive here using IntersectionObserver
-*/
 const contentRunning = document.querySelector('#content-running');
 const runningAnimation = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    /* 
-      Kalau dah intersect, play the animation  
-      Kalau dah keluar intersect, play the redo animation
-      transform: transform scaleX(-1);
-    */
-
     if (entry.isIntersecting && fireAnimation) {
-      /* Tweening~ */
-      let dudeTimeline = gsap.timeline();
-      dudeTimeline.to("#the-dude", { x: '70vw', duration: 3 })
-        .to("#the-dude", { scaleX: -1, duration: 0.33 })
-        .to("#the-dude", { x: 0, duration: 5 })
+      let dudeTimeline = gsap.timeline({ repeat: 5 });
+      dudeTimeline.to("#the-dude", { x: '120vw', scaleX: 1, duration: 5 })
+        .to("#the-dude", { scaleX: -1, duration: 0.2 })
+        .to("#the-dude", { x: '-40vw', duration: 5 })
 
-      let mosquitoTimeline = gsap.timeline();
-      mosquitoTimeline.to("#mosquito-behind-dude", { x: '88vw', duration: 3.33 })
+      let mosquitoTimeline = gsap.timeline({ repeat: 5 });
+      mosquitoTimeline.to("#mosquito-behind-dude", { x: '125vw', duration: 5 })
         .to("#mosquito-behind-dude", { scaleX: -1, duration: 0.25 })
-        .to("#mosquito-behind-dude", { x: '10vw', duration: 5.25 })
+        .to("#mosquito-behind-dude", { x: '-30vw', duration: 5 })
 
       fireAnimation = false;
+
+
     }
 
     // GSDevTools.create();
@@ -116,3 +99,9 @@ const runningAnimation = new IntersectionObserver((entries) => {
 }, { threshold: 0.25 });
 
 runningAnimation.observe(contentRunning);
+
+window.addEventListener('load', function () {
+  document.querySelector('#loader').classList.add("exit")
+  document.querySelector('body').classList.add("loaded")
+});
+
