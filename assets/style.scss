@@ -431,7 +431,7 @@ body {
 
 #content-end {
   padding-bottom: 108px;
-  padding-top: 480px;
+  padding-top: 400px;
   background-color: var(--mustard);
   position: relative;
   .title {
@@ -539,12 +539,12 @@ body {
   }
 
   #content-end {
-    padding-top: 350px;
+    padding-top: 240px;
     .wrapper {
       text-align: center;
     }
     &::before {
-      height: 430px;
+      height: 230px;
       background: top  / cover url('./images/background/content-end-bg.svg') no-repeat;
     }
   }
