@@ -589,8 +589,10 @@ body {
       scroll-snap-type: x mandatory;
       padding: 0 0 1.5rem;
       -webkit-overflow-scrolling: touch;
-      flex-flow: row nowrap;
       scrollbar-width: none;
+
+      display: flex;
+      gap: initial;
 
       &::-webkit-scrollbar {
         display: none;
@@ -598,8 +600,12 @@ body {
 
       .card-item {
         min-width: 80vw;
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         scroll-snap-stop: always;
+      }
+
+      .card-item + .card-item {
+        margin-left: 0.5rem;
       }
     }
   }
@@ -637,7 +643,6 @@ body {
     height: 350px;
     max-width: 75rem;
     @media screen and (min-width: 64rem) {
-      padding: 24px 0 48px;
       height: 350px;
     }
   }
@@ -714,8 +719,9 @@ body {
 }
 
 .pill-block {
-  display: flex;
+  display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(4, max-content);
   margin-top: 1rem;
   .pill {
     background-color: var(--mustard);
@@ -777,7 +783,7 @@ a {
   width: 24rem;
   height: 8px;
   background-color: var(--mustard);
-  margin-top: 3.5rem;
+  margin-top: 0.5rem;
 }
 
 .range input {
@@ -872,8 +878,7 @@ a {
   }
 
   .pill-block {
-    flex-flow: row wrap;
-    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
   }
 
   .hidden-mobile {
@@ -954,4 +959,50 @@ a {
   100% {
       transform: translateY(-20px) rotate(0deg)
   }
+}
+
+.label {
+  margin: -1rem 0 0.75rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--mustard);
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 1;
+  svg {
+    margin-right: 0.5rem;
+  }
+  @media screen and (max-width: 32rem) {
+    display: flex
+  }
+}
+
+.label-2 {
+  margin: 3rem 0 0.25rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--blood-red);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 1;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.poll-header {
+  border: 1px solid var(--mustard);
+  padding: 8px 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 14px;
+  min-width: 120px;
+  width: max-content;
+  line-height: 1.2;
 }

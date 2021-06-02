@@ -1,5 +1,14 @@
 import './assets/style.scss';
 
+window.addEventListener('load', function () {
+  document.querySelector('#loader').classList.add("exit")
+  document.querySelector('body').classList.add("loaded")
+  this.setTimeout(() => {
+    document.querySelector('#loader').style.visibility = 'hidden';
+  }, 2750);
+  this.setTimeout(() => this.document.title = "Continue reading...", 8000);
+});
+
 // Change navbar height after passed #first elem
 const firstElem = document.querySelector('#first');
 const navBarElem = document.querySelector('.navbar__block');
@@ -95,9 +104,3 @@ const runningAnimation = new IntersectionObserver((entries) => {
 }, { threshold: 0.25 });
 
 runningAnimation.observe(contentRunning);
-
-window.addEventListener('load', function () {
-  document.querySelector('#loader').classList.add("exit")
-  document.querySelector('body').classList.add("loaded")
-});
-
