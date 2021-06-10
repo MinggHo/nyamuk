@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=my/exclusive/why-mosquitoes-bite-you/",
+    "build": "vite build",
+    "build-production": "vite build --base=my/exclusive/why-mosquitoes-bite-you/",
     "serve": "vite preview",
     "style": "npx sass ./assets/style.scss ./index.css --watch"
   },
