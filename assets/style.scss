@@ -89,7 +89,9 @@ body {
 .navbar__exclusive {
   color: var(--white);
   font-size: 0.75rem;
-  margin-left: 1.25rem;
+  margin-left: 0.55rem;
+  font-family: "Poppins";
+  letter-spacing: 0.4px;
 }
 
 /*
@@ -454,10 +456,6 @@ body {
 }
 
 @media screen and (max-width: 32rem) {
-  .navbar__exclusive {
-    margin-left: auto;
-  }
-
   #first {
     h1.title {
       font-weight: 800;
@@ -1005,4 +1003,61 @@ a {
   min-width: 120px;
   width: max-content;
   line-height: 1.2;
+}
+
+.social-share-icon {
+  display: block;
+  max-width: 1.25rem;
+}
+
+.svg-hover {
+  width: 1.25rem;
+  margin-right: .5rem;
+  @media screen and (max-width: 32rem) {
+    width: 1.15rem;
+  }
+}
+
+.svg-hover path {
+  transition: fill 300ms ease-in, stroke 300ms ease;
+}
+
+#social-share {
+  display: flex;
+  padding: 0.35rem 1rem;
+  align-items: center;
+  border: 1px solid #FFF;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 300ms ease-in-out 150ms, border-color 300ms ease-in-out 200ms;
+  margin-left: auto;
+  @media screen and (max-width: 32rem) {
+    padding: 0.25rem 0.7rem;
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: 0.75rem;
+  }
+}
+
+#social-share:hover,
+#social-share:active,
+#social-share:focus  {
+  background-color: #4F4F4F;
+  border-color: transparent;
+}
+
+#social-share:hover .svg-hover path,
+#social-share:active .svg-hover path,
+#social-share:focus .svg-hover path {
+  fill: #FFF;
+  stroke: transparent;
+}
+
+.navbar__logo-wrapper {
+  display: flex;
+  align-items: center;
 }
