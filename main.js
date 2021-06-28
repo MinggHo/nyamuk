@@ -163,11 +163,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function webShare() {
   if (navigator.share) {
+
+    const url = document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href;
+
     navigator
       .share({
-        title: 'Web Share',
-        text: 'Web Share API is supported!',
-        url: 'https://websocialshare.com/'
+        title: document.querySelector('meta[property="og:title"]').getAttribute('content'),
+        url: url
       })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error));
@@ -180,5 +182,6 @@ function webShare() {
 const openSocialShareButton = document.querySelector("#social-share");
 
 openSocialShareButton.onclick = () => {
+  /* Check if mobile...? */
   webShare();
 }
