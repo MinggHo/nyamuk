@@ -161,8 +161,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+function webShare() {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: 'Web Share',
+        text: 'Web Share API is supported!',
+        url: 'https://websocialshare.com/'
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+  } else {
+    show(true);
+    console.log("Your browser doesn't support Navigator.share()");
+  }
+}
+
 const openSocialShareButton = document.querySelector("#social-share");
 
 openSocialShareButton.onclick = () => {
-  show(true);
+  webShare();
 }
