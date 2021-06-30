@@ -162,8 +162,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function webShare() {
-  if (navigator.share) {
-
+  if (navigator.share && window.innerWidth <= 1024) {
     const url = document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href;
 
     navigator
@@ -182,6 +181,5 @@ function webShare() {
 const openSocialShareButton = document.querySelector("#social-share");
 
 openSocialShareButton.onclick = () => {
-  /* Check if mobile...? */
   webShare();
 }
